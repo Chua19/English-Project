@@ -46,18 +46,27 @@
 						<hr />
 						<ul class="actions fit">
 							<li><a href="https://chua19.github.io/English-Project/choice1.html" class="button primary fit">Go to a College Team</a></li>
-							<li><a href="#" class="button primary fit">Go to a Professional Team</a></li>
+							<li><a href="#" class="button primary fit" id ="myBtn">Go to a Professional Team</a></li>
+							<li><button id="myBtn" class="button primary fit">Go to a Professional Team</button></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="content">
 						<section>
-							<a href="https://chua19.github.io/English-Project/index.html" class="button primary icon fa-mail-reply">Previous Choice</a>
+							<!-- <a href="https://chua19.github.io/English-Project/index.html" class="button primary icon fa-mail-reply">Previous Choice</a> -->
 						</section>
 						<section>
 						</section>
@@ -73,6 +82,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				// Get the button that opens the modal
+				var btn = document.getElementById("myBtn");
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				// When the user clicks the button, open the modal 
+				btn.onclick = function() {
+  					modal.style.display = "block";
+				}
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+  					modal.style.display = "none";
+				}
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+ 					if (event.target == modal) {
+    						modal.style.display = "none";
+  					}
+				}
+			</script>
 
 	</body>
 </html>
