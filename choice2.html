@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>English Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		/* The Modal (background) */
+		.modal {
+	  		display: none; /* Hidden by default */
+  			position: fixed; /* Stay in place */
+  			z-index: 1; /* Sit on top */
+  			padding-top: 100px; /* Location of the box */
+  			left: 0;
+  			top: 0;
+  			width: 100%; /* Full width */
+  			height: 100%; /* Full height */
+  			overflow: auto; /* Enable scroll if needed */
+  			background-color: rgb(0,0,0); /* Fallback color */
+  			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+  			background-color: #fefefe;
+ 			margin: auto;
+  			padding: 20px;
+  			border: 1px solid #888;
+  			width: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+  			color: #aaaaaa;
+  			float: right;
+  			font-size: 28px;
+	  		font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+  			color: #000;
+  			text-decoration: none;
+  			cursor: pointer;
+		}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header
+			<header id="header">
+				<a class="logo" href="index.html">Industrious</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+		-->
+		<!-- Nav
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="elements.html">Elements</a></li>
+					<li><a href="generic.html">Generic</a></li>
+				</ul>
+			</nav>
+		-->
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Practice Time</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<p>Once you arrive at college, you're immediately placed into a practice schedule. You realize that this schedule is extremely compact, with practice almost every day. You're practicing so much that you rarely have time to do anything else.</p>
+						<p>You must decide between two choices: either continue to rigorously practice with the team or take a break every so often but lose valuable time.</p>
+						<hr />
+						<ul class="actions fit">
+							<li><a href="https://chua19.github.io/English-Project/choice2.html" class="button primary fit">Continue to Practice</a></li>
+							<li><a href="https://chua19.github.io/English-Project/choice3.html" class="button primary fit">Take a Break</a></li>
+							<!-- <li><a href="#!" class="button primary fit" id ="myBtn" onclick="return false;">Take a Break</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</section>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<a href="https://chua19.github.io/English-Project/start.html" class="button primary icon fa-mail-reply">Previous Choice</a>
+						</section>
+						<section>
+						</section>
+						<section>
+							<a href="https://chua19.github.io/English-Project/index.html" class="button primary icon fa-refresh">Back to the Beginning</a>
+						</section>
+					</div>
+				</div>
+			</footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				// Get the button that opens the modal
+				var btn = document.getElementById("myBtn");
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				// When the user clicks the button, open the modal 
+				btn.onclick = function() {
+  					modal.style.display = "block";
+				}
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+  					modal.style.display = "none";
+				}
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+ 					if (event.target == modal) {
+    						modal.style.display = "none";
+  					}
+				}
+			</script>
+
+	</body>
+</html>
